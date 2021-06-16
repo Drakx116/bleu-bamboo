@@ -4,6 +4,12 @@ import commerce from '../lib/commerce';
 import Single from '../components/Products/_single';
 import ProductDecorationImage from '../components/Products/_decoration_image';
 
+import soap from '../assets/images/Visuel-ambiance-savon.jpg';
+import toothbrush from '../assets/images/Visuel-ambiance-dents.jpg';
+import brush from '../assets/images/Visuel-ambiance-brosse.jpg';
+
+import '../assets/scss/_products.scss';
+
 const Products = () => {
   const [ products, setProducts ] = useState([]);
   const [ loaded, setLoaded ] = useState(false);
@@ -45,17 +51,19 @@ const Products = () => {
   }
 
   const ProductList = () => {
+    const images = [ brush, soap, toothbrush ];
+
     return (
       <div id="products-container">
         { products.map((productTuple, i) => {
+          const className = 'section-products' + ((i === 1) ? ' second' : '');
+
           return (
             <section key={ i }>
-              <ProductDecorationImage image="" alt="Image" />
-              <div className="section-products">
+              <ProductDecorationImage index={ i } image={ images[i] } alt="Image" />
+              <div className={ className }>
                 { productTuple.map((product, j) => {
-                   return <div className="product" key={ j }>
-                     <Single product={ product } />
-                   </div>
+                   return <Single key={ j } product={ product } />
                 }) }
               </div>
             </section>

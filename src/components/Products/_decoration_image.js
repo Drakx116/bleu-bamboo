@@ -1,6 +1,8 @@
-const ProductDecorationImage = ({ image, alt }) => {
+const ProductDecorationImage = ({ index, image, alt }) => {
+  const className = 'section-image' + ((index === 1) ? ' second' : '');
+
   return (
-    <div className="section-image">
+    <div className={ className }>
         <img src={ image } alt={ alt } />
     </div>
   );
