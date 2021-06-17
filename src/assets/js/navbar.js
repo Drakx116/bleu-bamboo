@@ -55,13 +55,19 @@ export const handleResize = (isOpened) => {
             return true;
         }
     }
-    else {
+    else if (window.innerWidth < 768) {
         if (!isOpened) {
             opened.style.display = 'flex';
             hamburger.style.display = 'flex';
             label.style.display = 'flex';
             container.style.display = 'none';
         }
+    }
+    else {
+        opened.style.display = 'flex';
+        container.style.display = 'none';
+        hamburger.style.display = 'flex';
+        label.style.display = 'flex';
     }
 
     return false;
