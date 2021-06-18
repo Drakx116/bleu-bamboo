@@ -1,15 +1,15 @@
 import { useState } from "react";
 
-import { toggle, handleResize } from "../assets/js/navbar";
+import { toggle, handleResize } from "../../assets/js/navbar";
 
-import logo from '../assets/images/rounded-logo.png';
-import cart from '../assets/images/svg/cart.svg';
-import close from '../assets/images/svg/close.svg';
-import hamburger from '../assets/images/svg/hamburger.svg';
-import heart from '../assets/images/svg/heart.svg';
-import user from '../assets/images/svg/user.svg';
+import logo from '../../assets/images/rounded-logo.png';
+import cart from '../../assets/images/svg/cart.svg';
+import close from '../../assets/images/svg/close.svg';
+import hamburger from '../../assets/images/svg/hamburger.svg';
+import heart from '../../assets/images/svg/heart.svg';
+import user from '../../assets/images/svg/user.svg';
 
-import '../assets/scss/_navbar.scss';
+import '../../assets/scss/_navbar.scss';
 
 const Navbar = () => {
   window.onresize = () => {
