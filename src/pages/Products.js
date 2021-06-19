@@ -8,7 +8,7 @@ import soap from '../assets/images/Visuel-ambiance-savon.jpg';
 import toothbrush from '../assets/images/Visuel-ambiance-dents.jpg';
 import brush from '../assets/images/Visuel-ambiance-brosse.jpg';
 
-import '../assets/scss/_products.scss';
+import '../assets/scss/pages/products.scss';
 
 const Products = () => {
   const [ products, setProducts ] = useState([]);

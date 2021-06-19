@@ -1,7 +1,7 @@
 import DirtyToClean from "../components/Comparision/DirtyToClean";
 import Button from "../components/Global/Button";
 
-import '../assets/scss/_homepage.scss';
+import '../assets/scss/pages/homepage.scss';
 
 const Home = () => {
   return (

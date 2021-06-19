@@ -9,7 +9,7 @@ import bio from '../../assets/images/svg/cosmetique-bio.svg';
 import ecocert from '../../assets/images/svg/ecocert.svg';
 import fortheplanet from '../../assets/images/fortheplanet.png';
 
-import '../../assets/scss/_footer.scss';
+import '../../assets/scss/global/_footer.scss';
 import PaymentIcons from "../Checkout/PaymentIcons";
 
 const Footer = () => {

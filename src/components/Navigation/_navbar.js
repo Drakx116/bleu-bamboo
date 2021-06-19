@@ -9,7 +9,7 @@ import hamburger from '../../assets/images/svg/hamburger.svg';
 import heart from '../../assets/images/svg/heart.svg';
 import user from '../../assets/images/svg/user.svg';
 
-import '../../assets/scss/_navbar.scss';
+import '../../assets/scss/global/_navbar.scss';
 
 const Navbar = () => {
   window.onresize = () => {

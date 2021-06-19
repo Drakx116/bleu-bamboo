@@ -6,7 +6,7 @@ import Footer from "./components/Navigation/_footer";
 import Navbar from "./components/Navigation/_navbar";
 
 import './assets/scss/main.scss';
-import './assets/scss/_reset.scss';
+import './assets/scss/global/_reset.scss';
 
 function App() {
   return (

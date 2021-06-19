@@ -7,7 +7,7 @@ footer {
   &:before {
     content: "";
     display: block;
-    background-image: url("../../assets/images/svg/footer.svg");
+    background-image: url("../../images/svg/footer.svg");
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -116,7 +116,7 @@ footer {
   position: relative;
   padding: 4em 0;
   background-color: $secondary;
-  background-image: url("../../assets/images/svg/hr.svg");
+  background-image: url("../../images/svg/hr.svg");
   background-repeat: repeat-x;
   background-position: center;
 }
