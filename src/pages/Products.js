@@ -54,7 +54,7 @@ const Products = () => {
     const images = [ brush, soap, toothbrush ];
 
     return (
-      <div id="products-container">
+      <div className="container">
         { products.map((productTuple, i) => {
           const className = 'section-products' + ((i === 1) ? ' second' : '');
 
