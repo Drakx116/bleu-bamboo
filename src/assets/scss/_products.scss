@@ -56,6 +56,11 @@ $primary: #235473;
     margin-top: .5em;
     font-size: 22px;
     font-weight: bolder;
+
+    a {
+      color: black;
+      text-decoration: underline;
+    }
   }
 
   .product-price {

@@ -5,11 +5,12 @@ const Single = ({ product }) => {
   const img = product.media.source;
   const name = product.name;
   const price = product.price.formatted;
+  const link = '/products/' + product.permalink;
 
   return (
     <div className="product">
         <img src={ img } alt="Product"/>
-        <span className="product-name"> { name } </span>
+        <span className="product-name"><a href={ link }> { name } </a></span>
         <span className="product-price"> { price }€ </span>
         <button className="product-add-to-cart">
           <span> Ajouter au panier </span>
