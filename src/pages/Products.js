@@ -9,6 +9,7 @@ import toothbrush from '../assets/images/Visuel-ambiance-dents.jpg';
 import brush from '../assets/images/Visuel-ambiance-brosse.jpg';
 
 import '../assets/scss/pages/products.scss';
+import Loading from "../components/Global/Loading";
 
 const Products = () => {
   const [ products, setProducts ] = useState([]);
@@ -42,12 +43,6 @@ const Products = () => {
     });
 
     return sortedArray;
-  }
-
-  const Loading = () => {
-    return (
-      <p> Loading ... </p>
-    );
   }
 
   const ProductList = () => {

@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 
 import commerce from "../lib/commerce";
 import '../assets/scss/pages/single_product.scss';
+import Loading from "../components/Global/Loading";
 
 const SingleProduct = () => {
   const { slug } = useParams();
@@ -37,14 +38,6 @@ const SingleProduct = () => {
       </div>
     );
   };
-
-  const Loading = () => {
-    return (
-      <div className="container">
-        Loading ...
-      </div>
-    );
-  }
 
   return loaded ? <Product /> : <Loading />;
 }
