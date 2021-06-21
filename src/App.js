@@ -7,6 +7,7 @@ import Navbar from "./components/Navigation/_navbar";
 
 import './assets/scss/main.scss';
 import './assets/scss/global/_reset.scss';
+import SingleProduct from "./pages/SingleProduct";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={ Home } />
             <Route exact path="/products" component={ Products } />
+            <Route path="/products/:slug" component={ SingleProduct } />
           </Switch>
       <Footer />
     </main>
