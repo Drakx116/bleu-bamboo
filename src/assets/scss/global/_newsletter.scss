@@ -1,0 +1,213 @@
+@import './colors';
+
+#newsletter {
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  margin: 2em auto;
+  background-image: url("../../images/svg/newletter.svg");
+  background-size: cover;
+}
+
+#registration {
+  width: calc(50% - 4em);
+  padding: 2em;
+
+  span {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 36px;
+  }
+
+  p {
+    width: 40%;
+    margin-top: 1em;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+  }
+}
+
+#newsletter-form {
+  margin-top: 2em;
+
+  label {
+    span {
+      display: block;
+      font-family: "Poppins", sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+
+  input {
+    border-radius: 2em;
+    border: 1.5px solid black;
+    padding: .75em 1.5em;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    background-color: white;
+    transition: 0.4s ease;
+  }
+
+  input[type="email"] {
+    margin-top: 1em;
+
+    &:focus {
+      border-color: $primary;
+      color: $primary;
+      outline: none;
+    }
+  }
+
+  input[type="submit"] {
+    border-radius: 0 2em 2em 0;
+    margin-left: -2em;
+    cursor: pointer;
+    font-weight: 700;
+
+    &:hover {
+      border-color: $primary;
+      color: $primary;
+    }
+  }
+}
+
+#visual {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+
+  img {
+    width: 300px;
+  }
+
+  #text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    #gift {
+      font-family: "Amatic SC", serif;
+      font-size: 56px;
+      font-weight: 700;
+
+      #blue {
+        color: $primary;
+      }
+    }
+
+    #price {
+      font-family: "Poppins", sans-serif;
+      font-size: 24px;
+      font-weight: 300;
+    }
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  #newsletter {
+    width: 100%;
+  }
+
+  #registration {
+    width: 50%;
+    padding: 2em;
+
+    p {
+      width: 80%;
+    }
+  }
+
+  #visual {
+    width: 50%;
+    padding: 2em;
+
+    img {
+      width: 250px;
+    }
+
+    #text {
+      #gift {
+        font-size: 44px;
+      }
+
+      #price {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #newsletter {
+    flex-direction: row;
+    background-size: 200%;
+    background-position: right;
+  }
+
+  #registration {
+    padding: 1em;
+  }
+
+
+  #visual {
+    padding: 1em;
+
+    img {
+      width: 200px;
+    }
+
+    #text {
+      #gift {
+        font-size: 36px;
+      }
+
+      #price {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 968px) {
+  #newsletter {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+
+    form {
+      input[type="email"] {
+        font-size: 12px;
+        margin-left: 0;
+        display: block;
+      }
+
+      input[type="submit"] {
+        margin: .5em 0;
+        border-radius: 2em;
+        font-size: 12px;
+        display: block;
+      }
+    }
+  }
+
+  #registration {
+    width: calc(100% - 2em);
+    padding: 1em;
+
+    p {
+      width: 80%;
+    }
+  }
+
+  #visual {
+    width: 100%;
+    margin-top: 1em;
+    padding: 0;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
