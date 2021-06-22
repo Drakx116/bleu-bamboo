@@ -1,7 +1,13 @@
+@import '../../scss/global/colors';
+
 #single-product {
   display: flex;
   flex-direction: row;
-  background-color: #DDD;
+
+  .footer {
+    position: -webkit-sticky; /* Required for Safari */
+    position: sticky;
+  }
 }
 
 #product-preview {
@@ -9,21 +15,267 @@
   position: sticky;
   display: flex;
   width: 50%;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 600px;
   top: 0;
+
+  #product-face {
+    font-family: "Poppins", sans-serif;
+
+    button {
+      border: none;
+      background: none;
+      font-size: 18px;
+      color: black;
+      text-decoration: none;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &.active {
+        font-weight: 700;
+        color: $primary;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+#product-shipping {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1em;
+
+  span {
+    font-family: "Poppins", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: black;
+  }
+
+  #quantity {
+    display: flex;
+    align-items: center;
+    padding: 0 2em;
+
+    button {
+      margin: 0 1em;
+      width: 32px;
+      height: 32px;
+      font-family: "Poppins", sans-serif;
+      border: none;
+      border-radius: 2em;
+      background-color: black;
+      color: white;
+      cursor: pointer;
+
+      &:disabled {
+        background-color: #5F5F5F;
+      }
+    }
+
+    span {
+      font-size: 24px;
+      font-weight: 400;
+    }
+  }
+}
+
+#product-engagement {
+  margin-top: 1em;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: black;
+
+  #percent {
+    text-decoration: underline;
+  }
+}
+
+#product-container {
+  flex-grow: 1;
 }
 
 #product-content {
   display: flex;
   flex-direction: column;
-  flex: 1;
+  margin: 0 auto;
+  padding: 0 2em;
+
+  section {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      margin: .5em 0;
+      font-family: "Poppins", serif;
+      font-size: 36px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-family: "Poppins", serif;
+      font-size: 18px;
+      line-height: 28px;
+      width: 600px;
+    }
+  }
+
+
+  #section-about {
+    flex-direction: row;
+  }
 }
 
-.footer {
-  position: -webkit-sticky; /* Required for Safari */
-  position: sticky;
+#product-heading {
+  display: flex;
+  flex-direction: column;
+  //align-items: center;
+
+  h1 {
+    font-family: "Amatic SC", serif;
+    font-size: 96px;
+    font-weight: 700;
+  }
+
+  .hr {
+    margin-top: 2em;
+    width: 100%;
+    height: 40px;
+    background-image: url("../../images/hr-blue.png");
+    background-size: contain;
+    //background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  q {
+    margin-top: 1.5em;
+    font-family: "Poppins", serif;
+    font-size: 24px;
+    font-weight: 500;
+  }
+}
+
+#shipping-details {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+
+  img {
+    height: 64px;
+  }
+
+  span {
+    font-weight: 700;
+  }
+
+  a {
+    margin-top: .5em;
+    font-weight: 300;
+    color: black;
+    text-decoration: underline;
+  }
+
+  button {
+    width: fit-content;
+  }
+}
+
+.illustration {
+  margin-top: 2em;
+  width: 600px;
+}
+
+#section-about {
+  display: flex;
+  align-items: center;
+
+  #branding {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    #eco {
+      font-family: "Poppins", sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    #percentage {
+      font-size: 36px;
+      font-weight: 700;
+    }
+
+    #labels {
+      img:nth-child(3) {
+        display: block;
+      }
+    }
+  }
+
+  #composition {
+    flex-grow: 1;
+
+    .part {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1em;
+      border-top: 1px solid #DDD;
+      padding-top: 1em;
+      width: fit-content;
+
+      #heading {
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+      }
+
+      #data {
+        margin-top: .25em;
+        font-family: "Amatic SC", sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        color: $primary;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+#related-products {
+  display: flex;
+  flex-direction: row;
+
+  .product {
+    display: flex;
+    align-self: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+
+    img {
+      width: 300px;
+    }
+
+    a {
+      margin-top: .5em;
+      font-weight: 700;
+      text-decoration: underline;
+      color: black;
+    }
+
+    span {
+      margin-top: 1em;
+      font-weight: 300;
+    }
+  }
 }
 
 @media screen and (max-width: 1200px) {
