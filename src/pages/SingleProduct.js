@@ -17,7 +17,7 @@ import cosmetic from '../assets/images/svg/cosmetique-bio.svg';
 import ecocert from '../assets/images/svg/ecocert.svg';
 import percent from '../assets/images/fortheplanet.png';
 
-import '../assets/scss/pages/single_product.scss';
+import '../assets/scss/pages/single-product.scss';
 
 const SingleProduct = () => {
   const { slug } = useParams();
