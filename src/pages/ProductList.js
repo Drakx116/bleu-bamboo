@@ -35,7 +35,7 @@ const ProductList = () => {
   }
 
   return (
-    <div className="container">ddd
+    <div className="container">
       <div id="product-data">
         <ProductLink index={ current } />
       </div>

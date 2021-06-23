@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import SingleProduct from "./pages/SingleProduct";
 import ProductList from "./pages/ProductList";
 import Story from "./pages/Story";
+import NotFound from "./pages/NotFound";
 
 import Footer from "./components/Navigation/_footer";
 import Navbar from "./components/Navigation/_navbar";
@@ -20,6 +21,7 @@ function App() {
             <Route exact path="/products" component={ ProductList } />
             <Route path="/products/:slug" component={ SingleProduct } />
             <Route exact path="/about-us" component={ Story } />
+            <Route component={ NotFound } />
           </Switch>
       <Footer />
     </main>
