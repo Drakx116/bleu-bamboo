@@ -180,6 +180,8 @@
 
     form {
       input[type="email"] {
+        max-width: 400px;
+        width: 70%;
         font-size: 12px;
         margin-left: 0;
         display: block;

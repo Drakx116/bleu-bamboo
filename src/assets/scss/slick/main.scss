@@ -137,6 +137,7 @@
 #slider-clean {
   height: 800px;
   background-image: url("../../images/background-hero-1.jpg");
+  background-size: cover;
 
   &:hover {
     cursor: grab;
@@ -146,8 +147,23 @@
 #slider-dirty {
   height: 800px;
   background-image: url("../../images/background-hero-2.jpg");
+  background-size: cover;
 
   &:hover {
     cursor: grab;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #slider-clean {
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #slider-dirty {
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
