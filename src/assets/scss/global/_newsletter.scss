@@ -13,17 +13,20 @@
   width: calc(50% - 4em);
   padding: 2em;
 
-  span {
+  #advice {
+    display: block;
+    margin: 1em 0;
     font-family: "Mansalva", sans-serif;
-    font-size: 36px;
+    font-size: 28px;
+    width: 80%;
   }
 
   p {
     width: 40%;
     margin-top: 1em;
     font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 27px;
     font-weight: 400;
   }
 }
@@ -176,7 +179,7 @@
   #newsletter {
     flex-direction: column;
     width: 100%;
-    padding: 0;
+    margin: 4em 0;
 
     form {
       input[type="email"] {
@@ -207,9 +210,13 @@
 
   #visual {
     width: 100%;
-    margin-top: 1em;
+    margin: 2em 0;
     padding: 0;
     flex-direction: column-reverse;
     align-items: center;
+
+    #price {
+      margin: 1em 0;
+    }
   }
 }
