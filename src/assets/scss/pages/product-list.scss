@@ -1,9 +1,18 @@
 #product-data {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   padding-bottom: 2em;
+  margin: auto;
 
-  a {
+  img {
+    width: fit-content;
+    height: 32px;
+    margin-top: 1em;
+  }
+
+  span {
     font-family: "Mansalva", serif;
     font-size: 64px;
     font-weight: bold;

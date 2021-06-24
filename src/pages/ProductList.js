@@ -1,9 +1,12 @@
-import {useEffect, useState} from "react";
+import { useState } from "react";
+
+import Newsletter from "../components/Global/_newsletter";
+import Button from "../components/Global/Button";
 
 import wheel from '../assets/images/products.png';
+import separator from '../assets/images/separator.png';
 
 import '../assets/scss/pages/product-list.scss';
-import Newsletter from "../components/Global/_newsletter";
 
 const labels = [
   { name: "Brosse en Bambou", slug: 'bamboo-brush' },
@@ -26,19 +29,24 @@ const ProductList = () => {
     productWheel.style.transform = 'rotate('+now+'deg)';
   }
 
-  const ProductLink = ({ index }) => {
+  const ProductData = ({ index }) => {
     const i = Math.abs(index / 60);
     const product = labels[i];
     const slug = '/products/' + product.slug;
 
-    return <a href={ slug }> { product.name } </a>;
+    return (
+      <div id="product-data">
+        <span> { product.name } </span>
+        <img src={ separator } alt="Séparation" />
+        <a href={ slug }><Button text="Voir le produit" type="info" marginTop="2em" /></a>
+      </div>
+    ) ;
   }
 
   return (
     <div className="container">
-      <div id="product-data">
-        <ProductLink index={ current } />
-      </div>
+      <ProductData index={ current } />
+
       <div id="product-wheel">
         <img id="wheel" src={ wheel } alt=""/>
         <button onClick={ () => rotate(60) } id="previous"> ← </button>
