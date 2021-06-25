@@ -164,15 +164,27 @@ footer {
 
     &:before {
       height: 150px;
+      margin-top: 800px;
     }
   }
 
   #cta-container {
+    position: revert;
     flex-wrap: wrap;
-    margin-top: calc(-550px - 2em);
+    flex-direction: column;
+    margin: -950px 0 2em;
+    padding-top: 2em;
 
     div {
-      width: 25%;
+      flex-direction: row;
+      width: 100%;
+      padding: 0;
+
+      span {
+        width: revert;
+        margin-left: .5em;
+        text-align: left;
+      }
     }
   }
 
