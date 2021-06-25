@@ -58,7 +58,7 @@ const Home = () => {
 
       <section id="tom-presentation">
         <div id="image">
-          <img src={ tom } alt="Image Tom Frager" />
+          <img src={ tom } alt="Tom Frager" />
         </div>
         <div id="text">
           <h2> Une petite trousse avec une grande histoire </h2>
@@ -90,7 +90,7 @@ const Home = () => {
           <Button text="Je remplis ma trousse" />
         </div>
         <div id="image">
-          <img src={ homeCase } alt="Image trousse de voyage" />
+          <img src={ homeCase } alt="Trousse de voyage" />
         </div>
         <div id="icons">
           <div>

@@ -15,7 +15,7 @@ const HomePageProducts = ({ loaded, products }) => {
     <section id="products-section">
       <div id="heading">
         <span id="title"> Avec vous, partout </span>
-        <img src={ separator } alt="Image de séparation" />
+        <img src={ separator } alt="Séparateur" />
         <span id="lyrics"> À chaque voyage loin d'ici ... </span>
       </div>
       { loaded ? <List products={ products } /> : <Loading /> }

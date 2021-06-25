@@ -35,7 +35,7 @@ const Newsletter = () => {
         </p>
       </div>
       <div id="visual">
-        <img src={ travelCase } alt="Image trousse de voyage" />
+        <img src={ travelCase } alt="Trousse de voyage" />
         <div id="text">
           <span id="gift"> Une trousse est <span id="blue"> offerte </span> </span>
           <span id="price"> à partir de 20€ d'achat </span>

@@ -11,7 +11,7 @@ const NotFound = () => {
 
       <div id="not-found-content">
         <div id="illustration">
-          <img src={ notfound } alt="Image Erreur 404" />
+          <img src={ notfound } alt="Erreur 404" />
         </div>
 
         <div id="text-content">

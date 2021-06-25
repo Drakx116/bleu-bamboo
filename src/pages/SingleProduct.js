@@ -31,7 +31,7 @@ const SingleProduct = () => {
         setLoaded(true);
       })
       .catch(error => console.log(error));
-  }, []);
+  }, [ slug ]);
 
   const Product = () => {
     const image = product.media.source;
@@ -126,12 +126,12 @@ const SingleProduct = () => {
                   Une brosse, un peigne et du shampoing solide... Le trio parfait pour une chevelure soignée. </p>
                 <div id="related-products">
                   <div className="product">
-                    <img src={ comb } alt="Image peigne"/>
+                    <img src={ comb } alt="Peigne"/>
                     <a href="/products/bamboo-comb"> Peigne en bamboo </a>
                     <span id="price"> 5.00€ </span>
                   </div>
                   <div className="product">
-                    <img src={ shampoo } alt="Image shampoing solide"/>
+                    <img src={ shampoo } alt="Shampoing solide"/>
                     <a href="/products/solid-shampoo"> Shampoing solide </a>
                     <span id="price"> 5.00€ </span>
                   </div>

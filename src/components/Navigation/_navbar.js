@@ -45,25 +45,25 @@ const Navbar = () => {
           <ul>
             <li><a href="/products"> Mes bons produits </a></li>
             <li><a href="/about-us"> À propos de nous </a></li>
-            <li><a href=""> Contact </a></li>
+            <li><a href="/"> Contact </a></li>
           </ul>
         </div>
         <div className="navbar-content">
           <ul>
             <li>
-              <a href="">
+              <a href="/">
                 <img src={ heart } alt="Wishlist"/>
                 <span> Wishlist </span>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="/">
                 <img src={ cart } alt="Icône panier"/>
                 <span> Mes achats </span>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="/">
                 <img src={ user } alt="Icône utilisateur"/>
                 <span> Mon compte </span>
               </a>
