@@ -113,7 +113,7 @@
     h2 {
       margin: 2em 0 .5em 0;
       font-family: "Poppins", serif;
-      font-size: 36px;
+      font-size: 22px;
       font-weight: 700;
       text-transform: uppercase;
     }
@@ -356,11 +356,14 @@
     padding: 0 2em;
 
     h1 {
+      font-size: 54px;
       text-align: center;
     }
 
     .hr {
       margin: 1em auto;
+      max-width: 250px;
+      //height: fit-content;
     }
 
     section {
@@ -404,6 +407,43 @@
 
     .product {
       align-items: center;
+    }
+  }
+
+  #product-content {
+    align-items: flex-start;
+
+    #section-about {
+      flex-direction: column;
+      margin-top: 4em;
+
+      #composition {
+        .part {
+          #data {
+            font-size: 28px;
+          }
+
+          #heading {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  #composition {
+    flex-grow: 1;
+
+    .part {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1em;
+      border-top: 1px solid #DDD;
+      padding-top: 1em;
+
+      #data {
+        margin-top: .25em;
+      }
     }
   }
 }
