@@ -1,0 +1,35 @@
+@import 'colors';
+
+.btn {
+  margin: 0.5em 0;
+  border: 2px solid transparent;
+  border-radius: 2em;
+  padding: .4em 1.5em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  transition: 0.2s ease;
+  cursor: pointer;
+
+  &.primary {
+    background-color: $primary;
+    color: white;
+
+    &:hover {
+      background-color: white;
+      border-color: $primary;
+      color: $primary;
+    }
+  }
+
+  &.info {
+    border-color: $primary;
+    background-color: white;
+    color: $primary;
+
+
+    &:hover {
+      background-color: $primary;
+      color: white;
+    }
+  }
+}

@@ -1,5 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Mansalva&display=swap');
+
+@import 'global/colors';
 
 body {
   background-color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
 }
